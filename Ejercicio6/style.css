@@ -1,0 +1,57 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #757754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f8f4f4;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: rgb(152, 140, 153);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.errorMensaje {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    display: none; /* Oculto por defecto */
+}
+
+/* Estilos para bordes según validez */
+input.valido, textarea.valido {
+    border-color: green;
+}
+
+input.invalido, textarea.invalido {
+    border-color: red;
+}
+
+button {
+    border-radius: 4px;
+}
