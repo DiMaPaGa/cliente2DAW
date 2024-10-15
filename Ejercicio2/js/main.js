@@ -15,6 +15,8 @@ const redCard = cardContainer.querySelector(".cards.redClass"); //Hay que poner 
 if (redCard) {
     cardContainer.removeChild(redCard);
 }
+// correccion
+redCard.remove();
 
 // 3. Crear un elemento h1 con vuestro nombre.
 const nombreElemento = document.createElement("H1");
