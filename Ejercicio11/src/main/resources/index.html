@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./static/js/app.js" defer></script> 
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto">
+        <h1 class="text-3xl font-bold mb-6 text-center">Lista de Productos</h1>
+
+    <!-- Tabla para listar productos -->
+    <table class="min-w-full table-auto bg-white border border-blue-500 mb-6">
+        <thead class="bg-blue-200">
+            <tr>
+                <th class="px-4 py-2 border-blue-500">Id</th>
+                <th class="px-4 py-2 border-blue-500">Producto</th>
+                <th class="px-4 py-2 border-blue-500">Precio</th>
+                <th class="px-4 py-2 border-blue-500">Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="product-list" class="text-center">
+            <!-- Aquí se insertarán los productos a través de JavaScript-->
+        </tbody>
+    </table>
+
+    <!-- Formulario para añadir productos -->
+    <form id="product-form" class="bg-gray-100 p-4 border rounded shadow-lg">
+        <div class="mb-4">
+            <input type="text" id="productName" placeholder="Nombre del producto"
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required>
+        </div>
+        <div class="mb-4">
+            <input type="number" id="productPrice" placeholder="Precio del producto" 
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            required step="0.01">
+        </div>
+        
+        <button type="submit"
+            class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-300">
+            Añadir Producto
+        </button>
+    </form>
+</body>
+</html>
