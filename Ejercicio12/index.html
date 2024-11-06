@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/validation.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Ejercicio 12: Interfaz de CRUD con API</h1>
+        <form id="apiForm" action="pages/paginaMuestra.html" method="get" onsubmit="return validateForm()">
+            <label for="baseUrl">Base URL:</label>
+            <input type="text" id="baseUrl" name="baseUrl" required>
+            
+            <label for="getEndpoint">Endpoint de obtener todos:</label>
+            <input type="text" id="getEndpoint" name="getEndpoint" required>
+            
+            <label for="insertEndpoint">Endpoint de insertar:</label>
+            <input type="text" id="insertEndpoint" name="insertEndpoint" required>
+            
+            <label for="editEndpoint">Endpoint de editar:</label>
+            <input type="text" id="editEndpoint" name="editEndpoint" required>
+            
+            <label for="deleteEndpoint">Endpoint de eliminar:</label>
+            <input type="text" id="deleteEndpoint" name="deleteEndpoint" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    </body>
+    </html>
