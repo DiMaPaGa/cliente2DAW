@@ -1,0 +1,35 @@
+.card-container {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #0c84f5;
+  }
+  
+  .card-container select {
+    margin-bottom: 10px;
+  }
+  
+  .card-container.row .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .card-container.column .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .content > * { 
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #cadee7;
+  }
